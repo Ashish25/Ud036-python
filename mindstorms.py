@@ -16,11 +16,11 @@ def draw_art():
 
     chris = turtle.Turtle()
     chris.shape("turtle")
-    chris.speed(5)
+    chris.speed(50)
     chris.color("blue")
 
     #chris should take multiple turns and take turn little bit right
-    for i in range(1,36):
+    for i in range(1,37):
         draw_square(chris)
         chris.right(20)
     
@@ -28,7 +28,7 @@ def draw_art():
     scarlet = turtle.Turtle()
     scarlet.shape("arrow")
     scarlet.color("red")
-    scarlet.circle(100)
+    scarlet.circle(90)
     scarlet.speed(40)
 
     for i in range(1,37):
