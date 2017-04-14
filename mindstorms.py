@@ -5,24 +5,41 @@ def draw_square(some_turtle):
         some_turtle.forward(100)
         some_turtle.right(90)
 
+def draw_circle(some_turtle):
+    for i in range(1,5):
+        some_turtle.left(15)
+        some_turtle.circle(100)
+
 def draw_art():
     window = turtle.Screen()
-    window.bgcolor("yellow")
+    window.bgcolor("pink")
 
     chris = turtle.Turtle()
     chris.shape("turtle")
-    chris.speed(3)
+    chris.speed(5)
     chris.color("blue")
-    draw_square(chris)
 
+    #chris should take multiple turns and take turn little bit right
+    for i in range(1,36):
+        draw_square(chris)
+        chris.right(20)
+    
+    
     scarlet = turtle.Turtle()
     scarlet.shape("arrow")
     scarlet.color("red")
     scarlet.circle(100)
+    scarlet.speed(40)
+
+    for i in range(1,37):
+        draw_circle(scarlet)
 
     window.exitonclick()
 
+
 draw_art()
+
+draw_circle()
 
 draw_square()
     
